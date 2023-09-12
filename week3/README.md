@@ -5,6 +5,7 @@
 ### NAMA : Magfiroh Indah Karisma
 
 ## Soal 1
+Silakan selesaikan Praktikum 1 sampai 3, lalu dokumentasikan berupa screenshot hasil pekerjaan beserta penjelasannya!
 ### Praktikum 1: Menerapkan contoh flows ("if/else")
 #### Langkah 1:
 Ketik atau salin kode program berikut ke dalam fungsi main().
