@@ -67,12 +67,14 @@ Jangan lupa sesuaikan kode dan import di file main.dart kemudian akan tampil gam
 #### Langkah 1: Cupertino Button dan Loading Bar
 Buat file di basic_widgets > loading_cupertino.dart. Import stateless widget dari material dan cupertino. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
 ![Screenshot hello_world](docs/041.png)
+![Screenshot hello_world](docs/0444.png)
 
 #### Langkah 2: Floating Action Button (FAB)
 Button widget terdapat beberapa macam pada flutter yaitu ButtonBar, DropdownButton, TextButton, FloatingActionButton, IconButton, OutlineButton, PopupMenuButton, dan ElevatedButton.
 
 Buat file di basic_widgets > fab_widget.dart. Import stateless widget dari material. Lalu isi kode di dalam method Widget build adalah sebagai berikut.
 ![Screenshot hello_world](docs/042.png)
+![Screenshot hello_world](docs/0441.png)
 
 #### Langkah 3: Scaffold Widget
 Scaffold widget digunakan untuk mengatur tata letak sesuai dengan material design.
@@ -106,10 +108,16 @@ Date and Time Pickers termasuk pada kategori input dan selection widget, berikut
 ## Soal 2
 Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri di folder basic_widgets, kemudian pada file main.dart cukup melakukan import widget sesuai masing-masing langkah tersebut!
 #### Langkah 3: Scaffold Widget (Increment Counter)
+![Screenshot hello_world](docs/IC1.png)
+![Screenshot hello_world](docs/IC2.png)
 
 #### Langkah 4: Dialog Widget (Show Alert)
+![Screenshot hello_world](docs/A1.png)
+![Screenshot hello_world](docs/A2.png)
 
 #### Langkah 5: Input & Selection Widget (Text Field)
+![Screenshot hello_world](docs/TF1.png)
+![Screenshot hello_world](docs/TF2.png)
 
 #### Langkah 6: Date Picker
 ![Screenshot hello_world](docs/DP1.png)
@@ -117,7 +125,95 @@ Pada praktikum 4 mulai dari Langkah 3 sampai 6, buatlah file widget tersendiri d
 
 ## Soal 3
 Selesaikan Codelabs: Your first Flutter app, lalu buatlah laporan praktikumnya dan push ke repository GitHub Anda!
+### 1. Introduction
+![Screenshot hello_world](docs/1.png)
+### 2. Set up Flutter environment
+![Screenshot hello_world](docs/2.png)
+### 3. Create a project
+![Screenshot hello_world](docs/3.png)
+pubspec.yaml
+![Screenshot hello_world](docs/31.png)
+analysis_options.yaml
+![Screenshot hello_world](docs/32.png)
+main.dart
+![Screenshot hello_world](docs/33.png)
+### 4. Add a button
+![Screenshot hello_world](docs/4.png)
+Launch the app
+![Screenshot hello_world](docs/41.png)
+First hot reload
+![Screenshot hello_world](docs/42.png)
+Adding a button
+![Screenshot hello_world](docs/43.png)
+Adding onPressed
+![Screenshot hello_world](docs/44.png)
+![Screenshot hello_world](docs/45.png)
+Make new random word pair every the 'Next' button pressed
+![Screenshot hello_world](docs/46.png)
+![Screenshot hello_world](docs/47.png)
+### 5. Make the app prettier
+![Screenshot hello_world](docs/5.png)
+Extract a widget
+![Screenshot hello_world](docs/51.png)
+Add a card
+![Screenshot hello_world](docs/52.png)
+![Screenshot hello_world](docs/53.png)
+![Screenshot hello_world](docs/54.png)
+![Screenshot hello_world](docs/55.png)
+Theme and style
+![Screenshot hello_world](docs/56.png)
+![Screenshot hello_world](docs/57.png)
+![Screenshot hello_world](docs/58.png)
+TextTheme
+![Screenshot hello_world](docs/59.png)
+![Screenshot hello_world](docs/591.png)
+Improve accessibility
+![Screenshot hello_world](docs/592.png)
+![Screenshot hello_world](docs/593.png)
+Center the UI
+![Screenshot hello_world](docs/594.png)
+![Screenshot hello_world](docs/595.png)
+![Screenshot hello_world](docs/596.png)
+![Screenshot hello_world](docs/597.png)
 
+### 6. Add functionality
+![Screenshot hello_world](docs/6.png)
+Add the business logic
+![Screenshot hello_world](docs/61.png)
+![Screenshot hello_world](docs/62.png)
+Add the button
+![Screenshot hello_world](docs/63.png)
+![Screenshot hello_world](docs/64.png)
+![Screenshot hello_world](docs/65.png)
+![Screenshot hello_world](docs/66.png)
+![Screenshot hello_world](docs/67.png)
 
+### 7. Add navigation rail
+![Screenshot hello_world](docs/7.png)
+![Screenshot hello_world](docs/71.png)
+![Screenshot hello_world](docs/72.png)
+Stateless versus stateful widgets
+![Screenshot hello_world](docs/73.png)
+setState
+![Screenshot hello_world](docs/74.png)
+![Screenshot hello_world](docs/75.png)
+![Screenshot hello_world](docs/76.png)
+Use selectedIndex
+![Screenshot hello_world](docs/77.png)
+![Screenshot hello_world](docs/78.png)
+![Screenshot hello_world](docs/79.png)
+Responsiveness
+![Screenshot hello_world](docs/791.png)
+![Screenshot hello_world](docs/792.png)
+![Screenshot hello_world](docs/793.png)
+### 8. Add a new page
+![Screenshot hello_world](docs/8.png)
+![Screenshot hello_world](docs/794.png)
+![Screenshot hello_world](docs/795.png)
+![Screenshot hello_world](docs/796.png)
+![Screenshot hello_world](docs/797.png)
+![Screenshot hello_world](docs/798.png)
+### 9. Next steps
+![Screenshot hello_world](docs/9.png)
 ## Soal 4
 README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) di browser dan perangkat fisik (device) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda. Jika mode developer di perangkat HP Anda belum aktif, silakan cari di internet cara mengaktifkannya!
