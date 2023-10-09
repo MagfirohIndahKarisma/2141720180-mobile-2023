@@ -217,3 +217,13 @@ Responsiveness
 ![Screenshot hello_world](docs/9.png)
 ## Soal 4
 README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) di browser dan perangkat fisik (device) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda. Jika mode developer di perangkat HP Anda belum aktif, silakan cari di internet cara mengaktifkannya!
+
+#### Floating Action Button (FAB)
+![Screen record](docs/aa.gif)
+
+#### Date Picker
+![Screen record](docs/datepicker.gif)
+
+#### Namer App
+![Screen record](docs/namer.gif)
+
