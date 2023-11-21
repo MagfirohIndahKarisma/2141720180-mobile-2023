@@ -89,6 +89,9 @@ Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang tela
 
 ### SOAL 5 
 Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
+#### Metode initState() dan dispose() adalah bagian kunci dari siklus hidup (lifecycle) Stateful Widget di Flutter. Ketika sebuah Stateful Widget dibuat, metode initState() dipanggil sekali untuk melakukan inisialisasi, seperti menetapkan data awal atau mengatur sumber daya yang diperlukan. Dalam contoh yang diberikan, initState() digunakan untuk menambahkan listener pada scrollController agar saat pengguna menggulir layar, fokus dari inputan teks dihapus.
+
+#### Sementara itu, metode dispose() dipanggil saat Stateful Widget dihapus dari pohon widget. Fungsinya adalah membersihkan atau melepas sumber daya yang telah digunakan oleh widget, seperti menghentikan listener atau menghapus controller. Dalam langkah 13, dispose() digunakan untuk menghentikan listener yang sebelumnya ditambahkan pada scrollController, mencegah potensi memory leaks atau masalah performa saat widget tidak lagi digunakan. Dengan mengimplementasikan keduanya, kita dapat memastikan penggunaan sumber daya yang efisien dan pengelolaan siklus hidup yang tepat pada aplikasi Flutter.
 
 ### SOAL 6
 Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
