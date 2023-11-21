@@ -81,7 +81,8 @@ Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demiki
 
 ### SOAL 3
 Mengapa perlu variabel plan di langkah 6 pada praktikum tersebut? Mengapa dibuat konstanta ?
-
+#### Variabel plan yang dideklarasikan sebagai konstanta pada langkah tersebut digunakan untuk menyimpan informasi rencana atau tugas yang akan ditampilkan di layar. Penggunaan const pada inisialisasi Plan() mengindikasikan bahwa objek Plan yang dibuat merupakan konstan, artinya nilainya tidak dapat diubah setelah diberi nilai awal.
+#### Dalam kasus ini, variabel plan mungkin dideklarasikan sebagai konstan karena pada tahap awal pembuatan layar PlanScreen, kita ingin menampilkan rencana atau tugas default yang tidak akan berubah pada saat aplikasi dijalankan. Kemudian, melalui interaksi pengguna, seperti menambahkan tugas baru, akan ada perubahan pada data plan yang di-handle melalui perubahan State.
 
 ### SOAL 4
 Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
