@@ -77,10 +77,11 @@ Lakukan Hot restart (bukan hot reload) pada aplikasi Flutter Anda. Anda akan mel
 
 ### SOAL 2
 Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
-
+#### Langkah ini bertujuan untuk memisahkan definisi kelas Plan dan Task ke dalam file terpisah dalam folder models dan kemudian mengekspor keduanya dari file data_layer.dart. Ini merupakan praktik yang baik dalam organisasi proyek karena memungkinkan untuk menyimpan kelas-kelas yang berkaitan dalam satu direktori dan mengelompokkannya berdasarkan fungsionalitas atau jenisnya.
 
 ### SOAL 3
 Mengapa perlu variabel plan di langkah 6 pada praktikum tersebut? Mengapa dibuat konstanta ?
+
 
 ### SOAL 4
 Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
