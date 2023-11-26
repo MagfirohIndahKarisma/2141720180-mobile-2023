@@ -233,8 +233,10 @@ Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar dia
 #### PlanProvider merupakan widget yang menggunakan paket Provider untuk mengelola status atau data terkait rencana yang dibuat oleh pengguna. Ini memungkinkan akses dan pembaruan data terkait rencana yang dimiliki oleh widget lain. Sementara itu, PlanCreatorScreen dan PlanScreen adalah widget yang merepresentasikan layar-layar berbeda dalam aplikasi. PlanCreatorScreen merupakan layar di mana pengguna dapat membuat paket baru dengan memasukkan detail dan memilih opsi tertentu. Sedangkan, PlanScreen adalah layar di mana pengguna dapat melihat detail dari paket yang ada dan melakukan pengeditan atau penghapusan.
 
 #### Dalam diagram tersebut, metode Navigator.push digunakan untuk berpindah dari PlanCreatorScreen ke PlanScreen ketika pengguna melakukan klik pada kartu rencana. Selain itu, metode Navigator.pop digunakan untuk kembali dari PlanScreen ke PlanCreatorScreen ketika pengguna mengetuk tombol kembali. Ini menggambarkan navigasi antar layar dalam aplikasi tersebut.
+
 ### SOAL 3
 Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
-
+#### Hasil capture sudah dilampirkan diatas
+#### Sistem yang dihasilkan adalah sistem planning yang masing-masing plannya dapat memiliki sub-plan sehingga mempermudah user untuk melakukan kroscek atas progres dari plan yang sudah dibuat.
 ### SOAL 4
 Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
