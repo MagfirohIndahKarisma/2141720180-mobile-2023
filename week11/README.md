@@ -150,8 +150,13 @@ Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yan
 ### SOAL 3
 Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
 #### Dua method yang ditambahkan pada langkah 3 memungkinkan untuk menghitung jumlah tugas yang telah selesai dan juga untuk memberikan pesan tentang kelengkapan tugas dengan lebih mudah dan singkat. Dengan menggunakan completedCount, kita dapat langsung mendapatkan jumlah tugas yang telah selesai, sementara completenessMessage memberikan pesan tentang jumlah tugas yang telah selesai dari total tugas yang ada dalam model Plan. Dengan demikian, hal ini membuat pengelolaan data menjadi lebih mudah dan ringkas dalam model Plan.
+
 ### SOAL 4
 Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+#### Hasil capture sudah dilampirkan diatas
+#### Sistem yang dibuat adalah sistem planning yang dilengkapi informasi berupa jumlah plan yang telah dipenuhi berdasarkan jumlah checkbox yang telah dicentang.
+#### Praktikum ini bertujuan untuk menunjukkan cara menggunakan InheritedNotifier (melalui PlanProvider) untuk menyediakan data Plan ke dalam widget-tree dan memperbarui UI aplikasi berdasarkan perubahan data tersebut.
+
 
 ### SOAL 5
 Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
