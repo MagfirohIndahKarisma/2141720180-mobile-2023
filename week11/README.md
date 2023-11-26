@@ -149,7 +149,7 @@ Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yan
 
 ### SOAL 3
 Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
-
+#### Dua method yang ditambahkan pada langkah 3 memungkinkan untuk menghitung jumlah tugas yang telah selesai dan juga untuk memberikan pesan tentang kelengkapan tugas dengan lebih mudah dan singkat. Dengan menggunakan completedCount, kita dapat langsung mendapatkan jumlah tugas yang telah selesai, sementara completenessMessage memberikan pesan tentang jumlah tugas yang telah selesai dari total tugas yang ada dalam model Plan. Dengan demikian, hal ini membuat pengelolaan data menjadi lebih mudah dan ringkas dalam model Plan.
 ### SOAL 4
 Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
