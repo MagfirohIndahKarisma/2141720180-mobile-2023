@@ -221,11 +221,18 @@ Tambahkan widget seperti kode berikut.
 ![11-13](docs/3-14.png)
 
 Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini.
-
+|      Screenshot     |    Screen record    |
+|---------------------|---------------------|
+| ![11-02](docs/04.jpg) | ![11-02](docs/04.gif) |
 
 ### SOAL 2
 Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+![11-13](docs/32.png)
+#### Diagram yang diberikan menggambarkan struktur hierarkis dari widget dalam Flutter, yang mewakili tampilan dan perilaku dari aplikasi. Setiap elemen dalam diagram ini adalah objek yang menentukan tampilan serta interaksi UI. Widget tree ini menentukan bagaimana tata letak dan penampilan aplikasi tersebut. Dalam struktur ini, terdapat tiga widget turunan dari widget MaterialApp, yaitu PlanProvider, PlanCreatorScreen, dan PlanScreen.
 
+#### PlanProvider merupakan widget yang menggunakan paket Provider untuk mengelola status atau data terkait rencana yang dibuat oleh pengguna. Ini memungkinkan akses dan pembaruan data terkait rencana yang dimiliki oleh widget lain. Sementara itu, PlanCreatorScreen dan PlanScreen adalah widget yang merepresentasikan layar-layar berbeda dalam aplikasi. PlanCreatorScreen merupakan layar di mana pengguna dapat membuat paket baru dengan memasukkan detail dan memilih opsi tertentu. Sedangkan, PlanScreen adalah layar di mana pengguna dapat melihat detail dari paket yang ada dan melakukan pengeditan atau penghapusan.
+
+#### Dalam diagram tersebut, metode Navigator.push digunakan untuk berpindah dari PlanCreatorScreen ke PlanScreen ketika pengguna melakukan klik pada kartu rencana. Selain itu, metode Navigator.pop digunakan untuk kembali dari PlanScreen ke PlanCreatorScreen ketika pengguna mengetuk tombol kembali. Ini menggambarkan navigasi antar layar dalam aplikasi tersebut.
 ### SOAL 3
 Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
