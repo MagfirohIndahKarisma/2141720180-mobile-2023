@@ -143,6 +143,9 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Tidak akan terlihat per
 
 ### SOAL 2
 Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+#### Pada langkah 1, kita menggunakan InheritedNotifier, yang merupakan turunan dari InheritedWidget yang juga membungkus ValueNotifier<<Plan>Plan>. InheritedNotifier menggabungkan kemampuan warisan dari InheritedWidget dengan manfaat dari ValueNotifier.
+
+#### Menggunakan InheritedNotifier memungkinkan kita untuk menyebarkan notifikasi ke widget-widget yang menggunakan .of(context) saat ada perubahan pada ValueNotifier<<Plan>Plan>. Jadi, ketika ada perubahan pada ValueNotifier<<Plan>Plan>, widget yang menggunakan PlanProvider.of(context) akan diperbarui secara otomatis. Ini mempermudah manajemen state pada aplikasi Flutter.
 
 ### SOAL 3
 Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
