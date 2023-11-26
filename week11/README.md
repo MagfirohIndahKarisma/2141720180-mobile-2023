@@ -104,36 +104,42 @@ Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF ha
 ## Praktikum 2: Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
 ### Langkah 1: Buat file plan_provider.dart
 Buat folder baru provider di dalam folder lib, lalu buat file baru dengan nama plan_provider.dart berisi kode seperti berikut.
+![11-13](docs/2-1.png)
 
 ### Langkah 2: Edit main.dart
 Gantilah pada bagian atribut home dengan PlanProvider seperti berikut. Jangan lupa sesuaikan bagian impor jika dibutuhkan.
+![11-13](docs/2-2.png)
 
 ### Langkah 3: Tambah method pada model plan.dart
 Tambahkan dua method di dalam model class Plan seperti kode berikut.
+![11-13](docs/2-3.png)
 
 ### Langkah 4: Pindah ke PlanScreen
 Edit PlanScreen agar menggunakan data dari PlanProvider. Hapus deklarasi variabel plan (ini akan membuat error). Kita akan perbaiki pada langkah 5 berikut ini.
 
 ### Langkah 5: Edit method _buildAddTaskButton
 Tambahkan BuildContext sebagai parameter dan gunakan PlanProvider sebagai sumber datanya. Edit bagian kode seperti berikut.
+![11-13](docs/2-4.png)
 
 ### Langkah 6: Edit method _buildTaskTile
 Tambahkan parameter BuildContext, gunakan PlanProvider sebagai sumber data. Ganti TextField menjadi TextFormField untuk membuat inisial data provider menjadi lebih mudah.
-
-### Langkah 6: Edit method _buildTaskTile
-Tambahkan parameter BuildContext, gunakan PlanProvider sebagai sumber data. Ganti TextField menjadi TextFormField untuk membuat inisial data provider menjadi lebih mudah.
+![11-13](docs/2-5.png)
 
 ### Langkah 7: Edit _buildList
 Sesuaikan parameter pada bagian _buildTaskTile seperti kode berikut.
+![11-13](docs/2-6.png)
 
 ### Langkah 8: Tetap di class PlanScreen
 Edit method build sehingga bisa tampil progress pada bagian bawah (footer). Caranya, bungkus (wrap) _buildList dengan widget Expanded dan masukkan ke dalam widget Column seperti kode pada Langkah 9.
 
 ### Langkah 9: Tambah widget SafeArea
 Terakhir, tambahkan widget SafeArea dengan berisi completenessMessage pada akhir widget Column. Perhatikan kode berikut ini.
+![11-13](docs/2-9.png)
 
 Akhirnya, run atau tekan F5 jika aplikasi belum running. Tidak akan terlihat perubahan pada UI, namun dengan melakukan langkah-langkah di atas, Anda telah menerapkan cara memisahkan dengan baik antara view dan model. Ini merupakan hal terpenting dalam mengelola state di aplikasi Anda.
-
+|      Screenshot     |    Screen record    |
+|---------------------|---------------------|
+| ![11-02](docs/03.jpg) | ![11-02](docs/03.gif) |
 
 ### SOAL 2
 Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
@@ -154,45 +160,57 @@ Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF ha
 ## Praktikum 3: Membuat State di Multiple Screens
 ### Langkah 1: Edit PlanProvider
 Perhatikan kode berikut, edit class PlanProvider sehingga dapat menangani List Plan.
+![11-13](docs/3-1.png)
 
 ### Langkah 2: Edit main.dart
 Langkah sebelumnya dapat menyebabkan error pada main.dart dan plan_screen.dart. Pada method build, gantilah menjadi kode seperti ini.
+![11-13](docs/3-2.png)
 
 ### Langkah 3: Edit plan_screen.dart
 Tambahkan variabel plan dan atribut pada constructor-nya seperti berikut.
+![11-13](docs/3-3.png)
 
 ### Langkah 4: Error
 Itu akan terjadi error setiap kali memanggil PlanProvider.of(context). Itu terjadi karena screen saat ini hanya menerima tugas-tugas untuk satu kelompok Plan, tapi sekarang PlanProvider menjadi list dari objek plan tersebut.
 
 ### Langkah 5: Tambah getter Plan
 Tambahkan getter pada _PlanScreenState seperti kode berikut.
+![11-13](docs/3-5.png)
 
 ### Langkah 6: Method initState()
 Pada bagian ini kode tetap seperti berikut.
+![11-13](docs/3-6.png)
 
 ### Langkah 7: Widget build
 Pastikan Anda telah merubah ke List dan mengubah nilai pada currentPlan seperti kode berikut ini.
+![11-13](docs/3-7.png)
 
 ### Langkah 8: Edit _buildTaskTile
 Pastikan ubah ke List dan variabel planNotifier seperti kode berikut ini.
+![11-13](docs/3-8.png)
 
 ### Langkah 9: Buat screen baru
 Pada folder view, buatlah file baru dengan nama plan_creator_screen.dart dan deklarasikan dengan StatefulWidget bernama PlanCreatorScreen. Gantilah di main.dart pada atribut home menjadi seperti berikut.
 
 ### Langkah 10: Pindah ke class _PlanCreatorScreenState
 Kita perlu tambahkan variabel TextEditingController sehingga bisa membuat TextField sederhana untuk menambah Plan baru. Jangan lupa tambahkan dispose ketika widget unmounted seperti kode berikut.
+![11-13](docs/3-10.png)
 
 ### Langkah 11: Pindah ke method build
 Letakkan method Widget build berikut di atas void dispose. Gantilah ‘Namaku' dengan nama panggilan Anda.
+![11-13](docs/3-11.png)
 
 ### Langkah 12: Buat widget _buildListCreator
 Buatlah widget berikut setelah widget build.
+![11-13](docs/3-12.png)
 
 ### Langkah 13: Buat void addPlan()
 Tambahkan method berikut untuk menerima inputan dari user berupa text plan.
+![11-13](docs/3-13.png)
 
 ### Langkah 14: Buat widget _buildMasterPlans()
 Tambahkan widget seperti kode berikut.
+![11-13](docs/3-14.png)
 
 Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini.
 
