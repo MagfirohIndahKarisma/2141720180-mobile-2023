@@ -10,12 +10,19 @@ Buatlah sebuah project flutter baru dengan nama books di folder src week-12 repo
 
 Kemudian Tambahkan dependensi http dengan mengetik perintah berikut di terminal.
 
+![W12](docs/1.png)
 ### Langkah 2: Cek file pubspec.yaml
 Jika berhasil install plugin, pastikan plugin http telah ada di file pubspec ini seperti berikut.
 
+![W12](docs/2.png)
+
 ### Langkah 3: Buka file main.dart
 Ketiklah kode seperti berikut ini.
+
+![W12](docs/3.png)
+
 #### Soal 1: Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
+![W12](docs/soal1.png)
 
 ### Langkah 4: Tambah method getData()
 Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambil data dari API Google Books.
