@@ -41,9 +41,16 @@ Tambahkan method ini ke dalam class _FuturePageState yang berguna untuk mengambi
 ### Langkah 5: Tambah kode di ElevatedButton
 Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 
+![W12](docs/5.png)
+
 #### Soal 3
 - Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
+#### Tentu! `substring` adalah metode yang digunakan dalam kode tersebut untuk mengambil sebagian teks dari sebuah string. Dalam kasus ini, `value.body.toString()` mengembalikan teks dari respons yang diperoleh dari fungsi `getData()`, dan `substring(0, 450)` mengambil karakter dari indeks 0 hingga indeks 449 dari teks tersebut, sehingga menghasilkan potongan teks sepanjang 450 karakter pertama.
+
+#### Sementara itu, `catchError` adalah bagian dari konsep error handling dalam Dart/Flutter. Dalam blok `.then()` dari pemanggilan `getData()`, `catchError` ditetapkan untuk menangani kesalahan yang mungkin terjadi saat menjalankan fungsi `getData()`. Jika ada kesalahan dalam pengambilan data, blok `catchError` akan menangkapnya dan menjalankan fungsi yang diberikan, dalam hal ini mengubah nilai variabel 'result' menjadi 'An error occurred'. Ini memungkinkan aplikasi untuk mengelola situasi yang tidak terduga atau kesalahan yang mungkin terjadi saat mengambil data.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
+
+![W12](docs/soal3-2.gif)
 
 ## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
 ### Langkah 1: Buka file main.dart
