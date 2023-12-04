@@ -325,18 +325,29 @@ Lakukan run, jika terjadi error silakan diperbaiki.
 Buat file dart baru di folder lib project Anda.
 
 ### Langkah 2: Isi kode navigation_dialog.dart
+![W12](docs/37.png)
 
 ### Langkah 3: Tambah method async
+![W12](docs/38.png)
 
 ### Langkah 4: Panggil method di ElevatedButton
+![W12](docs/39.png)
 
 ### Langkah 5: Edit main.dart
 Ubah properti home
 
+![W12](docs/40.png)
+
 ### Langkah 6: Run
 Coba ganti warna background dengan widget dialog tersebut. Jika terjadi error, silakan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
 
+![W12](docs/soal17.gif)
+
 #### Soal 17
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+#### Tombol "Change color" pada layar `NavigationDialogScreen` menggunakan fungsi `_showColorDialog(context)` ketika ditekan. Fungsi ini menampilkan dialog `AlertDialog` dengan tiga pilihan warna: merah, hijau, dan biru. Setiap tombol warna saat ditekan akan mengubah nilai variabel `color` sesuai dengan warna yang dipilih dan menutup dialog. Setelah dialog ditutup, `setState(() {})` dipanggil untuk memperbarui tampilan layar berdasarkan warna yang baru dipilih.
 - Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+
+![W12](docs/soal17-2.gif)
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
