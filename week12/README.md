@@ -174,7 +174,12 @@ Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
 ### Langkah 4: Tambah method handleError()
 Tambahkan kode ini di dalam class _FutureStatePage
 
+![W12](docs/19.png)
+
 #### Soal 10: Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+![W12](docs/soal10.gif)
+#### Langkah pertama menambahkan method `returnError()` yang menciptakan kondisi error dengan melemparkan sebuah `Exception` setelah menunggu selama 2 detik. Sedangkan langkah keempat menambahkan method `handleError()` yang menangkap dan menangani error yang muncul saat menjalankan `returnError()`, dengan mengubah nilai `result` untuk merepresentasikan pesan error yang terjadi. Method `finally` di `handleError()` hanya mencetak 'Complete' di konsol setelah penanganan error tanpa mempengaruhi tampilan UI.
 
 ## Praktikum 6: Menggunakan Future dengan StatefulWidget
 
