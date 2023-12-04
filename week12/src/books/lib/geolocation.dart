@@ -1,40 +1,53 @@
-import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
 class LocationScreen extends StatefulWidget {
-const LocationScreen({super.key});
+  const LocationScreen({Key? key}) : super(key: key);
 
-@override
-State<LocationScreen> createState() => _LocationScreenState();
+  @override
+  State<LocationScreen> createState() => _LocationScreenState();
 }
 
 class _LocationScreenState extends State<LocationScreen> {
-String myPosition = '';
-@override
-void initstate() {
+  String myPosition = '';
+
+  @override
+  void initState() {
     super.initState();
-    getPosition().then((Position myPos) {
-    myPosition =
-        'Latitude: ${myPos.latitude.toString()} - Longitude: {myPos.longitude.toString()}';
-    setState(() {
-        myPosition = myPosition;
-    });
-    });
-}
+    _getPosition();
+  }
 
-@override
-Widget build(BuildContext context) {
-    return Scaffold(
-    appBar: AppBar(title: const Text('Current Location Risma')),
-    body: Center(child: Text(myPosition)),
-    );
-}
-
-Future<Position> getPosition() async {
+  Future<void> _getPosition() async {
     await Geolocator.requestPermission();
-    await Geolocator.isLocationServiceEnabled();
-    Position? position = await Geolocator.getCurrentPosition();
-    return position;
-}
+    if (await Geolocator.isLocationServiceEnabled()) {
+      Position? position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      );
+      if (position != null) {
+        setState(() {
+          myPosition =
+              'Latitude: ${position.latitude.toString()} - Longitude: ${position.longitude.toString()}';
+        });
+      } else {
+        setState(() {
+          myPosition = 'Unable to fetch location';
+        });
+      }
+    } else {
+      setState(() {
+        myPosition = 'Location services are disabled';
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+      final myWidget =
+          myPosition == '' ? const CircularProgressIndicator() : Text(myPosition);
+
+      return Scaffold(
+      appBar: AppBar(title: const Text('Current Location Risma')),
+      body: Center(child: myWidget),
+      );
+  }
 }
