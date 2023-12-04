@@ -156,13 +156,20 @@ Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
 
+![W12](docs/17.png)
+
 ### Langkah 2: ElevatedButton
 Ganti dengan kode berikut
+
+![W12](docs/18.png)
 
 ### Langkah 3: Run
 Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
 
 #### Soal 9: Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+(Captured with my phone)
+
+![W12](docs/soal9.gif)
 
 ### Langkah 4: Tambah method handleError()
 Tambahkan kode ini di dalam class _FutureStatePage

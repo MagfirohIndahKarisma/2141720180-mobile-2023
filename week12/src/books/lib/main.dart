@@ -57,6 +57,11 @@ class _FuturePageState extends State<FuturePage> {
       ]);
   }
 
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
+  }
+
   late Completer completer;
 
   Future getNumber() {
@@ -119,7 +124,15 @@ class _FuturePageState extends State<FuturePage> {
           ElevatedButton(
             child: const Text('GO!'),
             onPressed: () {
-              returnFG();
+              returnError().then((value) {
+                setState(() {
+                    result = 'Success';
+                });
+                }).catchError((onError) {
+                setState(() {
+                    result = onError.toString();
+                });
+                }).whenComplete(() => print('complete'));
               /* getNumber().then((value) {
                 setState(() {
                   result = value.toString();
@@ -137,7 +150,7 @@ class _FuturePageState extends State<FuturePage> {
                 result = 'An error occurred';
                 setState(() {}); 
               });*/
-            },
+            }
           ),
           const Spacer(),
           Text(result),
