@@ -186,11 +186,13 @@ Tambahkan kode ini di dalam class _FutureStatePage
 ### Langkah 1: install plugin geolocator
 Tambahkan plugin geolocator dengan mengetik perintah berikut di terminal.
 
+![W12](docs/20.png)
+
 ### Langkah 2: Tambah permission GPS
 Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file 
 android/app/src/main/androidmanifest.xml
 
-Jika Anda menargetkan untuk platform iOS, maka tambahkan kode ini ke file Info.plist
+![W12](docs/21.png)
 
 ### Langkah 3: Buat file geolocation.dart
 Tambahkan file baru ini di folder lib project Anda.
@@ -200,7 +202,10 @@ Buat class LocationScreen di dalam file geolocation.dart
 
 ### Langkah 5: Isi kode geolocation.dart
 
+![W12](docs/22.png)
+
 #### Soal 11: Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![W12](docs/soal11.png)
 
 ### Langkah 6: Edit main.dart
 Panggil screen baru tersebut di file main Anda seperti berikut.
