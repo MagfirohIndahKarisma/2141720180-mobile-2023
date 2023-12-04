@@ -147,8 +147,10 @@ Anda akan melihat hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan
 ### Langkah 4: Ganti variabel futureGroup
 Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 
-#### Soal 8: Jelaskan maksud perbedaan kode langkah 1 dan 4!
+![W12](docs/16.png)
 
+#### Soal 8: Jelaskan maksud perbedaan kode langkah 1 dan 4!
+#### Langkah 1 menggunakan `FutureGroup` dari paket `async` untuk secara dinamis menambah dan menunggu beberapa futures sebelum menjumlahkan hasilnya. Sementara langkah 4 langsung menggunakan `Future.wait` dari Dart untuk menunggu sejumlah futures selesai secara bersamaan, mengumpulkan hasilnya dalam bentuk list untuk diolah.
 ## Praktikum 5: Menangani Respon Error pada Async Code
 
 ### Langkah 1: Buka file main.dart
