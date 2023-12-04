@@ -281,9 +281,13 @@ Buatlah file baru ini di project lib Anda.
 
 ### Langkah 2: Isi kode navigation_first.dart
 
+![W12](docs/33.png)
+
 #### Soal 15
 - Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 - Silakan ganti dengan warna tema favorit Anda.
+
+![W12](docs/34.png)
 
 ### Langkah 3: Tambah method di class _NavigationFirstState
 Tambahkan method ini.
@@ -293,16 +297,27 @@ Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view m
 
 ### Langkah 5: Buat class NavigationSecond dengan StatefulWidget
 
+![W12](docs/35.png)
+
 ### Langkah 6: Edit main.dart
 Lakukan edit properti home.
+
+![W12](docs/36.png)
 
 ### Langkah 8: Run
 Lakukan run, jika terjadi error silakan diperbaiki.
 
 #### Soal 16
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+#### Setiap kali tombol ditekan di layar kedua (NavigationSecond), pengguna akan kembali ke layar sebelumnya dan warna latar belakang akan berubah sesuai dengan warna yang telah ditetapkan pada tombol yang ditekan di layar kedua (NavigationSecond). Ini memungkinkan pengguna untuk memilih warna yang akan ditampilkan di layar pertama (NavigationFirst) dengan menekan tombol di layar kedua.
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+![W12](docs/soal16-2.gif)
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+![W12](docs/soal16-1.gif)
+
 
 ## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
 
