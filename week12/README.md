@@ -83,18 +83,28 @@ Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat 
 ### Langkah 1: Buka main.dart
 Pastikan telah impor package async berikut.
 
+![W12](docs/9.png)
+
 ### Langkah 2: Tambahkan variabel dan method
 Tambahkan variabel late dan method di class _FuturePageState seperti ini.
 
+![W12](docs/10.png)
+
 ### Langkah 3: Ganti isi kode onPressed()
 Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
+
+![W12](docs/11.png)
 
 ### Langkah 4:
 Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bisa juga lakukan hot restart jika aplikasi sudah running. Maka hasilnya akan seperti gambar berikut ini. Setelah 5 detik, maka angka 42 akan tampil.
 
 #### Soal 5
 - Jelaskan maksud kode langkah 2 tersebut!
+#### Kode tersebut menambahkan variabel `completer` yang digunakan untuk mengelola proses asinkron dengan menggunakan `Completer`. Method `getNumber()` bertujuan untuk menginisialisasi `completer` sebagai `Completer<int>`, kemudian memanggil method `calculate()` untuk melakukan penundaan selama 5 detik sebelum mengembalikan nilai 42 melalui `completer.complete(42)`. Hasil perhitungan ini dapat diakses melalui future yang dikembalikan oleh `getNumber()`, sehingga memungkinkan aplikasi untuk menunggu dan mendapatkan nilai tersebut untuk digunakan di bagian lain dari kode.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+![W12](docs/soal5.gif)
 
 ### Langkah 5: Ganti method calculate()
 Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
