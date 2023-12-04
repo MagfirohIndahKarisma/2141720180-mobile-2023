@@ -56,18 +56,28 @@ Tambahkan kode pada onPressed di ElevatedButton seperti berikut.
 ### Langkah 1: Buka file main.dart
 Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
 
+![W12](docs/6.png)
+
 ### Langkah 2: Tambah method count()
 Lalu tambahkan lagi method ini di bawah ketiga method sebelumnya.
 
+![W12](docs/7.png)
+
 ### Langkah 3: Panggil count()
 Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berikut.
+
+![W12](docs/8.png)
 
 ### Langkah 4: Run
 Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
 
 #### Soal 4
 - Jelaskan maksud kode langkah 1 dan 2 tersebut!
+#### KOde tersebut adalah bagian dari pembuatan method-method asinkron di dalam kelas `_FuturePageState` dalam sebuah aplikasi Flutter. Method-method `returnOneAsync`, `returnTwoAsync`, dan `returnThreeAsync` merupakan fungsi-fungsi yang menggunakan `await` untuk menunda eksekusi selama 3 detik masing-masing sebelum mengembalikan nilai berturut-turut 1, 2, dan 3. Selanjutnya, terdapat method `count()` yang digunakan untuk menjalankan fungsi-fungsi asinkron sebelumnya secara berurutan dan menjumlahkan hasilnya ke dalam variabel `total`. Method `count()` menggunakan `await` untuk menunggu hasil dari setiap fungsi asinkron sebelum melanjutkan ke fungsi berikutnya. Setelah semua nilai dikumpulkan, nilai total diubah menjadi string dan disimpan dalam variabel `result`. Akhirnya, `setState()` digunakan untuk memperbarui tampilan UI dengan nilai yang sudah dihitung.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+
+![W12](docs/soal5.gif)
 
 ## Praktikum 3: Menggunakan Completer di Future
 ### Langkah 1: Buka main.dart
