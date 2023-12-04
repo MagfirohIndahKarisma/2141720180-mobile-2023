@@ -238,18 +238,30 @@ Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan peru
 ### Langkah 1: Modifikasi method getPosition()
 Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
 
+![W12](docs/28.png)
+
 ### Langkah 2: Tambah variabel
 Tambah variabel ini di class _LocationScreenState
+
+![W12](docs/29.png)
 
 ### Langkah 3: Tambah initState()
 Tambah method ini dan set variabel position
 
+![W12](docs/30.png)
+
 ### Langkah 4: Edit method build()
 Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
 
+![W12](docs/31.png)
+
 #### Soal 13
 - Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+#### Tidak
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+
+![W12](docs/soal13.gif)
+
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
 
 ### Langkah 5: Tambah handling error
