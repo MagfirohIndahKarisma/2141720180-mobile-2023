@@ -109,12 +109,22 @@ Terakhir, run atau tekan F5 untuk melihat hasilnya jika memang belum running. Bi
 ### Langkah 5: Ganti method calculate()
 Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
 
+![W12](docs/12.png)
+
 ### Langkah 6: Pindah ke onPressed()
 Ganti menjadi kode seperti berikut.
 
+![W12](docs/13.png)
+
 #### Soal 6
 - Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+#### Dalam langkah kelima, perubahan dilakukan pada method `calculate()` di mana perubahan dilakukan pada bagian penanganan kesalahan. Sekarang, method ini menggunakan blok `try-catch` untuk mengelola proses asinkron. Saat proses yang tertunda dalam `Future.delayed` selesai, nilai 42 akan dikembalikan melalui `completer.complete(42)`. Namun, jika terjadi kesalahan (error) selama penundaan, blok `catch` akan dieksekusi dan `completer.completeError({})` digunakan untuk menandai bahwa terjadi kesalahan dengan mengembalikan objek kosong.
+
+#### Langkah keenam mengubah bagian `onPressed()` di mana pemanggilan `getNumber().then((value) {...})` dipindahkan ke dalam `onPressed()` dari tombol. Kemudian, penanganan kesalahan (error handling) ditambahkan dengan pemanggilan `.catchError((e) {...})`. Ketika future dari `getNumber()` menyelesaikan tugasnya, nilai yang diterima akan diubah menjadi string dan diperbarui ke dalam variabel `result`. Namun, jika ada kesalahan yang terjadi dalam proses tersebut, pesan 'An error occurred' akan disimpan dalam variabel `result`.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+
+![W12](docs/soal6.gif)
 
 ## Praktikum 4: Memanggil Future secara paralel
 
