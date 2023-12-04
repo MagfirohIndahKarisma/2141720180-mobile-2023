@@ -269,7 +269,10 @@ Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restar
 
 #### Soal 14
 - Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+#### Tidak
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+![W12](docs/soal14.gif)
 
 ## Praktikum 8: Navigation route dengan Future Function
 

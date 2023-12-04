@@ -9,8 +9,7 @@ class LocationScreen extends StatefulWidget {
 }
 
 class _LocationScreenState extends State<LocationScreen> {
-  String myPosition = '';
-  Future<Position>? position;
+  late Future<Position> position;
 
   @override
   void initState() {
@@ -19,30 +18,35 @@ class _LocationScreenState extends State<LocationScreen> {
   }
 
   Future<Position> getPosition() async {
-      await Geolocator.isLocationServiceEnabled();
-      Position position = await Geolocator.getCurrentPosition();
-      return position;
+    await Geolocator.isLocationServiceEnabled();
+    Position position = await Geolocator.getCurrentPosition();
+    return position;
   }
 
   @override
   Widget build(BuildContext context) {
-      return Scaffold(
-        appBar: AppBar(title: const Text('Current Location Risma')),
-        body: Center(
-          child: FutureBuilder(
-            future: position,
-            builder:
-              (BuildContext context, AsyncSnapshot<Position> snapshot) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Current Location Risma')),
+      body: Center(
+        child: FutureBuilder<Position>(
+          future: position,
+          builder: (BuildContext context, AsyncSnapshot<Position> snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const CircularProgressIndicator();
             } else if (snapshot.connectionState == ConnectionState.done) {
-              return Text(snapshot.data.toString());
+              if (snapshot.hasError) {
+                return Text('Something terrible happened!');
+              } else if (snapshot.hasData) {
+                return Text(snapshot.data.toString());
+              } else {
+                return const Text('No data available');
+              }
             } else {
               return const Text('');
             }
-          }
-        )
-      )
+          },
+        ),
+      ),
     );
   }
 }
