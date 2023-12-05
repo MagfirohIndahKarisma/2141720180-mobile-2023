@@ -65,7 +65,11 @@
 ## Praktikum 3: Injeksi data ke streams
 ### Soal 8 
 - Jelaskan maksud kode langkah 1-3 tersebut!
+#### Kode `StreamTransformer` untuk mengubah data dalam sebuah stream sebelum data tersebut diteruskan ke listener yang mendengarkan stream tersebut. `StreamTransformer` ini menerapkan transformasi yang ditentukan ke setiap nilai dalam stream sebelum hasil transformasi tersebut diteruskan ke listener. Saat terjadi error pada stream, penanganan error juga diatur di dalam `StreamTransformer` untuk mengubah nilai menjadi -1 sebelum diteruskan ke listener.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal8.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
 
 ## Praktikum 4: Subscribe ke stream events
