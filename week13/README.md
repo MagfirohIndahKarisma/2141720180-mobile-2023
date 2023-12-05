@@ -118,5 +118,10 @@
 ## Praktikum 7: BLoC Pattern
 ### Soal 13
 - Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+#### `random_bloc` memiliki dua `StreamController`: `_generateRandomController` menerima instruksi untuk menghasilkan angka acak, sementara `_randomNumberController` mengirimkan angka acak ke UI. Pada `RandomScreen`, angka acak dari `RandomNumberBloc` ditampilkan. Melalui `StreamBuilder`, UI terhubung dengan stream `_bloc.randomNumber`, memungkinkan tampilan terupdate saat ada perubahan data. Tombol floating action memulai proses pembangkitan angka acak dengan `generateRandom.add(null)` ke `_generateRandomController`. Proses ini kembali mengirim angka acak ke UI melalui stream.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal13.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
