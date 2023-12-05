@@ -89,10 +89,18 @@
 ## Praktikum 5: Multiple stream subscriptions
 ### Soal 10
 - Jelaskan mengapa error itu bisa terjadi ?
+#### Kesalahan terjadi ketika mencoba menambahkan dua langganan (subscription) pada satu stream tanpa membatalkan langganan sebelumnya. Situasi ini terjadi saat menginisialisasi dua langganan dalam metode `initState()`, di mana sudah ada langganan yang diinisialisasi untuk menangani stream yang sama secara bersamaan.
+
+![W13](docs/3.png)
+
 
 ### Soal 11
 - Jelaskan mengapa hal itu bisa terjadi ?
+#### Saat mengklik tombol "New Random Number", akan terjadi pengulangan angka acak yang identik. Angka-angka ini terhubung dengan sebuah stream yang dikenali oleh dua objek subscription, yakni subscription dan subscription2. Stream ini akan menghasilkan peristiwa (angka acak) yang dipisahkan oleh tanda "-". Ketika tombol "Stop Stream" ditekan, langganan terhadap stream akan dihentikan, sehingga stream tidak lagi menghasilkan output, meskipun tombol "New Random Number" masih ditekan.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal11.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
 
 ## Praktikum 6: StreamBuilder
