@@ -44,7 +44,12 @@
 ## Praktikum 2: Stream controllers dan sinks
 ### Soal 6 
 - Jelaskan maksud kode langkah 8 dan 10 tersebut!
+#### Langkah 8: `initState()` digunakan untuk menginisialisasi properti dalam sebuah widget stateful saat widget tersebut pertama kali dibuat. Di sini, `initState()` membuat sebuah instance dari `NumberStream`, kemudian mengakses controller dari objek tersebut untuk mendapatkan akses ke *stream* data. *Stream* ini kemudian di-*listen* menggunakan metode `listen()` untuk mendengarkan perubahan-perubahan yang terjadi pada *stream* tersebut. Setiap kali ada data baru yang masuk ke *stream*, fungsi yang diberikan ke `listen()` akan dipanggil. Di dalam fungsi tersebut, `setState()` digunakan untuk memperbarui nilai `lastNumber` sesuai dengan data terakhir yang diterima dari *stream*.
+#### Langkah 10: Fungsi `addRandomNumber()` menggunakan objek dari kelas `Random` untuk menghasilkan nomor acak antara 0 dan 9, lalu menambahkan nomor tersebut ke dalam *stream sink* `numberStream` dengan menggunakan metode `addNumberToSink()`.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal6.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
 ### Soal 7

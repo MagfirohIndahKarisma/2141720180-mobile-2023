@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:math';
 import './stream.dart';
 
 void main() {
@@ -32,14 +34,29 @@ class _StreamHomePageState extends State<StreamHomepage> {
   Color bgColor = Colors.blueGrey;
   late ColorStream colorStream;
 
+  int lastNumber = 0;
+  late StreamController numberStreamController;
+  late NumberStream numberStream;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stream Risma'),
       ),
-      body: Container(
-        decoration: BoxDecoration(color: bgColor),
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(lastNumber.toString()),
+            ElevatedButton(
+              onPressed: () => addRandomNumber(),
+              child: Text('New Random Number'),
+            )
+          ],
+        )
       )
     );
   }
@@ -54,8 +71,26 @@ class _StreamHomePageState extends State<StreamHomepage> {
 
   @override
   void initState() {
+    numberStream = NumberStream();
+    numberStreamController = numberStream.controller;
+    Stream stream = numberStreamController.stream;
+    stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    });
     super.initState();
-    colorStream = ColorStream();
-    changeColor();
+  }
+
+  @override
+  void dispose() {
+    numberStreamController.close();
+    super.dispose();
+  }
+
+  void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
   }
 }
