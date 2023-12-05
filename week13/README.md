@@ -75,7 +75,15 @@
 ## Praktikum 4: Subscribe ke stream events
 ### Soal 9
 - Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+#### Langkah kedua menambahkan kode yang menciptakan objek `NumberStream` dan `NumberStreamController`. `NumberStream` menghasilkan stream integer secara acak, sedangkan `NumberStreamController` mengontrol stream tersebut.
+
+#### Langkah keenam menambahkan kode di `dispose()` untuk membatalkan subscription stream. Hal ini dilakukan agar terhindar dari memory leak yang bisa terjadi.
+
+#### Langkah kedelapan menambahkan kode yang memeriksa apakah stream telah ditutup sebelum menambahkan data baru ke dalamnya. Jika stream sudah ditutup, nilai dari variabel `lastNumber` akan diubah menjadi -1.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal9.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
 
 ## Praktikum 5: Multiple stream subscriptions
