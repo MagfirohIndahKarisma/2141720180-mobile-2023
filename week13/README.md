@@ -28,6 +28,9 @@
 
 ### Soal 4
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal4.gif)
+
 - Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
 
 ### Soal 5
