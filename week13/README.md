@@ -35,6 +35,10 @@
 
 ### Soal 5
 - Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
+#### `listen()`: Metode `listen()` digunakan untuk mendengarkan nilai-nilai dari *stream* secara asinkron. Ini memungkinkan kita untuk memasang *listener* pada *stream* yang akan dipanggil setiap kali ada data baru yang dikirim. Dalam contoh Anda, `listen()` digunakan untuk mendengarkan perubahan warna dari `colorStream.getColors()` dan mengubah `bgColor` sesuai dengan setiap perubahan warna yang terjadi.
+  
+#### `await for`: Konstruksi `await for` digunakan dalam *async generator function* dan menunggu setiap nilai yang dikirim dari *stream* secara berurutan. Ini menunggu nilai dari *stream* dan mengeluarkan nilai-nilai tersebut satu per satu secara berurutan. Dalam kasus *stream* yang tidak berakhir, seperti `Stream.periodic` atau *stream* yang tak terhingga, penggunaan `await for` akan terus menunggu dan mengambil nilai-nilai yang diberikan oleh *stream* sampai *stream* tersebut diakhiri atau tidak ada nilai lain yang dikirim.
+
 - Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
 
 ## Praktikum 2: Stream controllers dan sinks
