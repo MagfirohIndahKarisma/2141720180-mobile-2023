@@ -54,6 +54,11 @@
 
 ### Soal 7
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+#### `addError()` menambahkan sebuah pesan error ke dalam *stream sink* menggunakan `controller.sink.addError('error')`. 
+
+#### `.onError((error) { ... })` mendengarkan error yang mungkin terjadi pada *stream* dan menentukan tindakan yang diambil ketika error terjadi. Ketika error terdeteksi, fungsi yang diberikan ke `.onError()` akan dieksekusi. Dalam contoh ini, fungsi tersebut memperbarui nilai `lastNumber` menjadi -1 dalam `setState()`. 
+
+#### `numberStream.addError();` memicu fungsi `addError()` yang telah didefinisikan sebelumnya untuk menambahkan pesan error ke dalam *stream*.
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
 
