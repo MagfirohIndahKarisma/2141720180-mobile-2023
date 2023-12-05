@@ -106,7 +106,13 @@
 ## Praktikum 6: StreamBuilder
 ### Soal 12
 - Jelaskan maksud kode pada langkah 3 dan 7 !
+#### Langkah 3: Dalam metode `getNumber`, digunakan `Stream.periodic` untuk membuat stream dari bilangan bulat dengan interval 1 detik. Angka acak antara 0 dan 9 dihasilkan dengan menggunakan `Random`, kemudian dikirim ke dalam stream melalui `yield* async*`, yang menciptakan stream dari nilai-nilai yang dihasilkan.
+
+#### Langkah 7: Dalam membangun widget, `StreamBuilder` menggunakan data dari `numberStream` yang berasal dari `getNumber()` dalam `NumberStream`. Jika terdapat `snapshot.hasData`, widget menampilkan teks yang memuat nilai data. Saat terjadi kesalahan, hanya mencetak pesan "Error!" tanpa menampilkan konten apa pun. Ketika tidak ada data, widget yang tidak terlihat akan dikembalikan. Ini memungkinkan tampilan untuk beradaptasi dengan perubahan data yang diterima dari stream, sehingga menghasilkan tampilan yang cocok dengan kondisi stream saat itu.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+![W13](docs/soal12.gif)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
 
 ## Praktikum 7: BLoC Pattern
